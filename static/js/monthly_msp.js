@@ -36,15 +36,15 @@ function init() {
           });
 
 
-          var scenarios = monthlyData.map(o => o.Scenario)
-          console.log("SCENARIO NAMES");
-          console.log(scenarios);
+          // var scenarios = monthlyData.map(o => o.Scenario)
+          // console.log("SCENARIO NAMES");
+          // console.log(scenarios);
 
-          scenarios.forEach(scenario => {
-               selector.append("option")
-                    .text(scenario)
-                    .property("value", scenario);
-          });
+          // scenarios.forEach(scenario => {
+          //      selector.append("option")
+          //           .text(scenario)
+          //           .property("value", scenario);
+          // });
      });
 }
 

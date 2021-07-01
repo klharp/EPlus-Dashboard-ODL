@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="ODL Dashboard" />
+    <meta name="author" content="Kerry Harp" />
+
+    <title>ODL Dashboard </title>
+
+    <!-- <link rel="shortcut icon" type="image.jpg" href="static/img/favicon.ico"> -->
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+        integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+
+    <!-- d3 JavaScript -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="static/js/d3Caching.js"></script> -->
+
+    <!--Plotly-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- Ominivore Leaflet Plugin -->
+    <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="static/css/mapstyle.css">
+
+</head>
+
+<body id="page-top">
+
+    <!-- NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                Comparison of Window / Shading Performance
+            </a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html" role="button">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Locations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="msp/annual_viz.html">Minneapolis, MN</a>
+                            <a class="dropdown-item" href="hou/annual_viz.html">Houston, TX</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HEADER SECTION-->
+    <header class="bg-primary text-white" background>
+        <div class="container text-center">
+            <h1>Comparison of Window / Shading Performance</h1>
+            <h4>Data &amp; Visualizations of EnergyPlus Simulations</h4>
+        </div>
+    </header>
+
+
+    <!-- INTRO SECTION-->
+    <section id="intro">
+        <div class="container>
+            <div class=" row">
+            <div class="col-lg-8 mx-auto">
+                <h3>Background</h3>
+                <p>
+                    In 1997 ODL developed the first blinds between insulated glass panels (BBGs), which were
+                    installed primarily in residential entry doors. In 2016 ODL launched between glass blinds for
+                    windows, which are now sold to a range of large and small window OEMs. These blinds are manually
+                    controlled today. Historically energy performance has been characterized by U-factor and SHGC
+                    metrics. With the establishment of the Attachments Energy Rating Council (AERC) the DOE has
+                    supported studies assessing the whole
+                    building energy savings of attached window coverings, specifically cellular shades and
+                    horizontal blinds. These studies do not account for blind slat angle control which allow for
+                    direct or diffuse solar radiation while providing natural daylight. There are no comparable
+                    studies for BBGs and other forms of dynamic glazing. The DOE also sponsored studies of the
+                    effectiveness of different window covering control strategies, anticipating the use of automated
+                    window coverings in smart homes.
+                </p>
+                <p>
+                    In 2019 the Environmental Protection Agency (EPA) issued the first ENERGY STAR&reg; Smart Home
+                    Energy Management System (SHEMS)
+                    specification. AERC certified automated window coverings are listed as an “encouraged” optional
+                    device. There was pushback against including ENERGY STAR windows with dynamic glazing,
+                    specifically BBGs, based on the belief that the ENERGY STAR windows rating does not address
+                    dynamic glass and that there is no connected criteria for windows.
+                </p>
+
+                <h3>Objective of this Dashboard</h3>
+                <p>Simulations were done in EnergyPlus (v 9.2) using the National Renewable Energy Laboratory (NREL)
+                    prototype residential building that was modified by the AERC. The locations included a cold climate
+                    (Minneapolis, MN) and a hot climate (Houston, TX).
+                </p>
+
+                <div class="container text-center">
+                    <img src="static/images/prototype.png" / width="600">
+                </div>
+
+                <p>
+                    Simulations were done for unshaded windows, windows with BBGs and Venetian blinds with slat angles
+                    between -75 and 75 degrees at increments of 15 degrees, and windows with 3 types of cellular blinds.
+                    The insulating class units (IGUs) where specific for each climate, including window systems that
+                    meet
+                    the ENERGY STAR requirements for that location.
+                </p>
+
+                <p>The EnergyPlus simulation results were compiled in using Python/Pandas and then formatted for export.
+                    Exported data was used in Tableau to create visualizations specific for this project. The
+                    visualizations are intended to look at both the energy impacts of shading devices and the
+                    impacts of natural daylighting. Daylighting and illumnance data was recorded at a reference point
+                    on the south elevation, 36 inches from the exterior wall and 30 inches from the floor. The
+                    visualizations are intended to display the trade-offs on the insulating values of shading devices
+                    compared the availability of natural light.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer-->
+    <footer class="homefooter">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; 2021: Harp Design, Inc.</p>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+        integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+        crossorigin=""></script>
+
+
+    <!-- API key -->
+    <script type="text/javascript" src="static/js/config.js"></script>
+
+    <!-- JS  -->
+    <!-- <script type="text/javascript" src="static/js/map.js"></script> -->
+
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="static/js/scripts.js"></script>
+
+</body>
+
+</html>

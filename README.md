@@ -19,4 +19,4 @@ Data scrapers were created in a Jupyter Notebook. There is a notebook for each c
     * Exports illuminance data in csv and json.
 
 
-Preview at: <a href="https://klharp.github.io/EPlus-Dashboard2/">klharp.github.io/EPlus-Dashboard2</a>
+Preview at: <a href="https://klharp.github.io/EPlus-Dashboard-ODL/">klharp.github.io/EPlus-Dashboard-ODL</a>

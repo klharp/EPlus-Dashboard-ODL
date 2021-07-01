@@ -41,6 +41,22 @@
             </a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../../about.html" role="button">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Locations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../msp/annual_viz.html">Minneapolis, MN</a>
+                            <a class="dropdown-item" href="annual_viz.html">Houston, TX</a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -84,28 +100,39 @@
 
 
     <!-- INTRO SECTION-->
-    <section id="intro">
+    <section id="houMonthlyViz">
         <div class="container text-center">
             <div class="row margin-top-50">
                 <div class="col-lg-12 mx-auto">
-                    <div class="annual viz">
+                    <div class="monthlt viz">
                         <h2>Monthly Average Illumination and Total Cost in Houston</h2>
 
-                        <script type='text/javascript'
-                            src='https://prod-useast-b.online.tableau.com/javascripts/api/viz_v1.js'></script>
-                        <div class='tableauPlaceholder' style='width: 1200px; height: 1350px;'><object
-                                class='tableauViz' width='1200' height='1350' style='display:none;'>
-                                <param name='host_url' value='https%3A%2F%2Fprod-useast-b.online.tableau.com%2F' />
+                        <div class='tableauPlaceholder' id='viz1625174584740' style='position: relative'><noscript><a
+                                    href='#'><img alt='MonthlyIlluminance2 '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ho&#47;hou_monthly_P&#47;MonthlyIlluminance2&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                                 <param name='embed_code_version' value='3' />
-                                <param name='site_root' value='&#47;t&#47;harpdesign' />
-                                <param name='name' value='hou_monthly&#47;MonthlyIlluminance2' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='hou_monthly_P&#47;MonthlyIlluminance2' />
                                 <param name='tabs' value='no' />
-                                <param name='toolbar' value='no' />
-                                <param name='showAppBanner' value='false' />
-                            </object>
-                        </div>
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ho&#47;hou_monthly_P&#47;MonthlyIlluminance2&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1625174584740'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1200px'; vizElement.style.height = '1527px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1200px'; vizElement.style.height = '1527px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '927px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
 
-                        <p class="small">Note: Illuminance levels were measured at the south orientation at a reference point located 3 feet from the
+
+                        <p class="small">Note: Illuminance levels were measured at the south orientation at a reference
+                            point located 3 feet from the
                             window and 3 feet from the floor.</p>
                     </div>
                 </div>

@@ -34,20 +34,20 @@ function init() {
                     cell.text(value);
                });
                // verify objects
-               console.log("VERIFY LOOPED DATA");
-               console.log(scenario);
+               // console.log("VERIFY LOOPED DATA");
+               // console.log(scenario);
           });
 
 
-          var scenarios = monthlyIllData.map(o => o.Scenario)
-          console.log("SCENARIO NAMES");
-          console.log(scenarios);
+          // var scenarios = monthlyIllData.map(o => o.Scenario)
+          // console.log("SCENARIO NAMES");
+          // console.log(scenarios);
 
-          scenarios.forEach(scenario => {
-               selector.append("option")
-                    .text(scenario)
-                    .property("value", scenario);
-          });
+          // scenarios.forEach(scenario => {
+          //      selector.append("option")
+          //           .text(scenario)
+          //           .property("value", scenario);
+          // });
 
      });
 }
