@@ -34,28 +34,39 @@ body {
 
 #houAnnualViz {
   position: relative;
-  height: 1100px;
+  height: 1050px;
   width: 100%;
 }
 
 #houMonthlyViz {
   position: relative;
-  height: 1100px;
+  height: 1050px;
+  width: 100%;
+}
+
+#houDailyViz {
+  position: relative;
+  height: 1080px;
   width: 100%;
 }
 
 #mspAnnualViz {
   position: relative;
-  height: 2600px;
+  height: 2580px;
   width: 100%;
 }
 
 #mspMonthlyViz {
   position: relative;
-  height: 2600px;
+  height: 2550px;
   width: 100%;
 }
 
+mspDailyViz {
+  position: relative;
+  height: 2580px;
+  width: 100%;
+}
 .navbar {
   background-color: #456080;
   opacity: 0.90;
