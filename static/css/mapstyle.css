@@ -52,7 +52,7 @@ body {
 
 #mspAnnualViz {
   position: relative;
-  height: 2580px;
+  height: 2550px;
   width: 100%;
 }
 
@@ -62,11 +62,12 @@ body {
   width: 100%;
 }
 
-mspDailyViz {
+#mspDailyViz {
   position: relative;
   height: 2580px;
   width: 100%;
 }
+
 .navbar {
   background-color: #456080;
   opacity: 0.90;
