@@ -64,25 +64,10 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="annual_viz.html">Annual Energy</a>
-                            <a class="dropdown-item" href="monthly_viz.html">Monthly Energy</a>
-                            <a class="dropdown-item" href="monthly_illuminance_viz.html">Monthly Illuminance</a>
-                            <a class="dropdown-item" href="daily_viz.html">Daily Energy</a>
-                            <a class="dropdown-item" href="daily_illuminance_viz.html">Daily Illuminance</a>
-
+                            <a class="dropdown-item" href="monthly_viz.html">Monthly Energy &amp; Illuminance</a>
+                            <a class="dropdown-item" href="hourly_viz.html">Daily/Hourly Performance Targets</a>
                         </div>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Data
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="annual.html">Annual</a>
-                            <a class="dropdown-item" href="monthly.html">Monthly</a>
-                            <a class="dropdown-item" href="monthly_illuminance.html">Monthly Illuminance</a>
-                        </div>
-                    </li> -->
-
                 </ul>
             </div>
         </div>
@@ -100,23 +85,498 @@
     </header>
 
 
-
-
     <!-- INTRO SECTION-->
+    <section id="Intro">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <h2>Annual Energy in Minneapolis, MN</h2>
+                    <p>
+                        The annual energy in kBtus and costs in dollars are displayed per window system.</p>
+                    <p>
+                        The annual difference in cost for each window system compared to a base case is also displayed.
+                        The data is sorted by choosing a base case (dual clear: unshaded or with a Venetian blind at
+                        0-degrees).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Clear-Clear-->
+    <a name="clear-clear"></a>
+
+    <!-- SUB NAVIGATION -->
+    <section id="SubNav">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <h4>Window System</h4>
+                    <p>
+                        <a href=#clear-clear>Dual Clear</a> | <a href=#lowe-clear>Dual MSG LowE (#2)</a> | <a
+                            href=#clear-lowe>Dual MSG LowE (#3)</a> | <a href=#lowe-lowe>Dual MSG LowE (#2 &amp; #4)</a>
+                        | <a href=#lowe-clear-lowe>Triple MSG LowE (#2 &amp; #5)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ANNUAL ENERGY SECTION-->
     <section id="mspAnnualViz">
         <div class="container text-center">
             <div class="row margin-top-50">
                 <div class="col-lg-10 mx-auto">
                     <div class="annual viz">
-                        <h2>Annual Energy Use in Minneapolis</h2>
+                        <h2>Dual Clear Annual Energy Use in Minneapolis</h2>
 
-                        <div class='tableauPlaceholder' id='viz1625746006613' style='position: relative'><noscript><a href='#'><img alt='annual2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_P&#47;annual2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='msp_annual_P&#47;annual2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_P&#47;annual2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1625746006613');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='900px';vizElement.style.height='2527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='900px';vizElement.style.height='2527px';} else { vizElement.style.width='100%';vizElement.style.height='1877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                        
+                        <div class='tableauPlaceholder' id='viz1628711491670' style='position: relative'><noscript><a
+                                    href='#'><img alt='Clear&#47;Clear '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_clear-clear&#47;ClearClear&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='msp_annual_clear-clear&#47;ClearClear' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_clear-clear&#47;ClearClear&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1628711491670'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1227px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1227px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- DIFFERENCE SECTION-->
+    <section id="mspAnnualViz">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <div class="annualviz">
+                        <h2>Difference from Base Case in Minneapolis</h2>
+
+                        <div class='tableauPlaceholder' id='viz1628711585637' style='position: relative'><noscript><a
+                                    href='#'><img alt='Clear&#47;Clear Delta Base '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_clear-clear_diff&#47;ClearClearDeltaBase&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='msp_annual_clear-clear_diff&#47;ClearClearDeltaBase' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_clear-clear_diff&#47;ClearClearDeltaBase&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1628711585637'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1027px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1027px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LowE-Clear-->
+    <a name="lowe-clear"></a>
+
+    <!-- SUB NAVIGATION -->
+    <section id="SubNav">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <h4>Window System</h4>
+                    <p>
+                        <a href=#clear-clear>Dual Clear</a> | <a href=#lowe-clear>Dual MSG LowE (#2)</a> | <a
+                            href=#clear-lowe>Dual MSG LowE (#3)</a> | <a href=#lowe-lowe>Dual MSG LowE (#2 &amp; #4)</a>
+                        | <a href=#lowe-clear-lowe>Triple MSG LowE (#2 &amp; #5)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANNUAL ENERGY SECTION-->
+    <section id="mspAnnualViz">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <div class="annual viz">
+                        <h2>Dual MSG LowE (#2) Annual Energy Use in Minneapolis</h2>
+
+                        <div class='tableauPlaceholder' id='viz1628711694688' style='position: relative'><noscript><a
+                                    href='#'><img alt='LowE&#47;Clear '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-clear&#47;LowEClear&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='msp_annual_lowe-clear&#47;LowEClear' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-clear&#47;LowEClear&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1628711694688'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1227px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1227px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DIFFERENCE SECTION-->
+    <section id="mspAnnualViz">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <div class="annualviz">
+                        <h2>Difference from Base Case in Minneapolis</h2>
+
+                        <div class='tableauPlaceholder' id='viz1628711717991' style='position: relative'><noscript><a
+                                    href='#'><img alt='LowE&#47;Clear Delta Base  '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-clear_diff&#47;LowEClearDeltaBase&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='msp_annual_lowe-clear_diff&#47;LowEClearDeltaBase' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-clear_diff&#47;LowEClearDeltaBase&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1628711717991'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1027px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1027px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Clear Lowe-->
+    <a name="clear-lowe"></a>
+
+    <!-- SUB NAVIGATION -->
+    <section id="SubNav">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <h4>Window System</h4>
+                    <p>
+                        <a href=#clear-clear>Dual Clear</a> | <a href=#lowe-clear>Dual MSG LowE (#2)</a> | <a
+                            href=#clear-lowe>Dual MSG LowE (#3)</a> | <a href=#lowe-lowe>Dual MSG LowE (#2 &amp; #4)</a>
+                        | <a href=#lowe-clear-lowe>Triple MSG LowE (#2 &amp; #5)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANNUAL ENERGY SECTION-->
+    <section id="mspAnnualViz">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <div class="annual viz">
+                        <h2>Dual MSG LowE (#3) Annual Energy Use in Minneapolis</h2>
+
+                        <div class='tableauPlaceholder' id='viz1628711787401' style='position: relative'><noscript><a
+                                    href='#'><img alt='Clear&#47;LowE '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_clear-lowe&#47;ClearLowE&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='msp_annual_clear-lowe&#47;ClearLowE' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_clear-lowe&#47;ClearLowE&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1628711787401'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1227px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1227px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DIFFERENCE SECTION-->
+    <section id="mspAnnualViz">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <div class="annualviz">
+                        <h2>Difference from Base Case in Minneapolis</h2>
+
+                        <div class='tableauPlaceholder' id='viz1628711819371' style='position: relative'><noscript><a
+                                    href='#'><img alt='Clear&#47;LowE Delta Base '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_clear-lowe_diff&#47;ClearLowEDeltaBase&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='msp_annual_clear-lowe_diff&#47;ClearLowEDeltaBase' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_clear-lowe_diff&#47;ClearLowEDeltaBase&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1628711819371'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1027px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1027px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Lowe Lowe-->
+    <a name="lowe-lowe"></a>
+
+    <!-- SUB NAVIGATION -->
+    <section id="SubNav">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <h4>Window System</h4>
+                    <p>
+                        <a href=#clear-clear>Dual Clear</a> | <a href=#lowe-clear>Dual MSG LowE (#2)</a> | <a
+                            href=#clear-lowe>Dual MSG LowE (#3)</a> | <a href=#lowe-lowe>Dual MSG LowE (#2 &amp; #4)</a>
+                        | <a href=#lowe-clear-lowe>Triple MSG LowE (#2 &amp; #5)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANNUAL ENERGY SECTION-->
+    <section id="mspAnnualViz">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <div class="annual viz">
+                        <h2>Dual MSG LowE (#2 &amp; #4) Annual Energy Use in Minneapolis</h2>
+
+                        <div class='tableauPlaceholder' id='viz1628711869246' style='position: relative'><noscript><a
+                                    href='#'><img alt='LowE&#47;LowE '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-lowe&#47;LowELowE&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='msp_annual_lowe-lowe&#47;LowELowE' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-lowe&#47;LowELowE&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1628711869246'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1227px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1227px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DIFFERENCE SECTION-->
+    <section id="mspAnnualViz">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <div class="annualviz">
+                        <h2>Difference from Base Case in Minneapolis</h2>
+
+                        <div class='tableauPlaceholder' id='viz1628711905222' style='position: relative'><noscript><a
+                                    href='#'><img alt='LowE&#47;LowE Delta Base '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-lowe_diff&#47;LowELowEDeltaBase&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='msp_annual_lowe-lowe_diff&#47;LowELowEDeltaBase' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-lowe_diff&#47;LowELowEDeltaBase&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1628711905222'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1027px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1027px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Lowe/Clear/Lowe-->
+    <a name="lowe-clear-lowe"></a>
+
+    <!-- SUB NAVIGATION -->
+    <section id="SubNav">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <h4>Window System</h4>
+                    <p>
+                        <a href=#clear-clear>Dual Clear</a> | <a href=#lowe-clear>Dual MSG LowE (#2)</a> | <a
+                            href=#clear-lowe>Dual MSG LowE (#3)</a> | <a href=#lowe-lowe>Dual MSG LowE (#2 &amp; #4)</a>
+                        | <a href=#lowe-clear-lowe>Triple MSG LowE (#2 &amp; #5)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANNUAL ENERGY SECTION-->
+    <section id="mspAnnualViz">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <div class="annual viz">
+                        <h2>Triple MSG LowE (#2 &amp; #5) Annual Energy Use in Minneapolis</h2>
+
+                        <div class='tableauPlaceholder' id='viz1628712000428' style='position: relative'><noscript><a
+                                    href='#'><img alt='LowE&#47;Clear&#47;LowE '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-clear-lowe&#47;LowEClearLowE&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='msp_annual_lowe-clear-lowe&#47;LowEClearLowE' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-clear-lowe&#47;LowEClearLowE&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1628712000428'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1227px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1227px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DIFFERENCE SECTION-->
+    <section id="mspAnnualViz">
+        <div class="container text-center">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <div class="annualviz">
+                        <h2>Difference from Base Case in Minneapolis</h2>
+
+                        <div class='tableauPlaceholder' id='viz1628712032888' style='position: relative'><noscript><a
+                                    href='#'><img alt='LowE&#47;Clear&#47;LowE Delta Base '
+                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-clear-lowe_diff&#47;LowEClearLowEDeltaBase&#47;1_rss.png'
+                                        style='border: none' /></a></noscript><object class='tableauViz'
+                                style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='msp_annual_lowe-clear-lowe_diff&#47;LowEClearLowEDeltaBase' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image'
+                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ms&#47;msp_annual_lowe-clear-lowe_diff&#47;LowEClearLowEDeltaBase&#47;1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object></div>
+                        <script
+                            type='text/javascript'>                    var divElement = document.getElementById('viz1628712032888'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1027px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1027px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 

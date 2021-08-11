@@ -34,37 +34,44 @@ body {
 
 #houAnnualViz {
   position: relative;
-  height: 1050px;
+  /* height: 1050px; */
   width: 100%;
 }
 
 #houMonthlyViz {
   position: relative;
-  height: 1050px;
+  /* height: 1050px; */
   width: 100%;
 }
 
 #houDailyViz {
   position: relative;
-  height: 1080px;
+  /* height: 1080px; */
   width: 100%;
 }
 
 #mspAnnualViz {
   position: relative;
-  height: 2550px;
+  /* height: 2550px; */
   width: 100%;
 }
 
 #mspMonthlyViz {
   position: relative;
-  height: 2550px;
+  /* height: 2550px; */
   width: 100%;
 }
 
 #mspDailyViz {
   position: relative;
-  height: 2580px;
+  /* height: 2580px; */
+  width: 100%;
+}
+
+#SubNav {
+  position: relative;
+  background-color: rgba(69, 96, 128, 0.15);
+  /* height: 2580px; */
   width: 100%;
 }
 
@@ -147,4 +154,9 @@ body {
   text-align: center;
   color: #000;
   font-size: 11px;
+}
+
+.bold {
+  font-size: 99%;
+  font-weight: bold;
 }
