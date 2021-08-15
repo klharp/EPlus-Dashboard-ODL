@@ -42,11 +42,11 @@
             </a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link " href="about.html" role="button">
                             About
                         </a>
-                    </li> -->
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -78,7 +78,7 @@
         <div class="container>
             <div class=" row">
             <div class="col-lg-8 mx-auto">
-                <h3>Background</h3>
+                <!-- <h3>Background</h3>
                 <p>
                     In 1997 ODL developed the first blinds between insulated glass panels (BBGs), which were
                     installed primarily in residential entry doors. In 2016 ODL launched between glass blinds for
@@ -100,32 +100,75 @@
                     device. There was pushback against including ENERGY STAR windows with dynamic glazing,
                     specifically BBGs, based on the belief that the ENERGY STAR windows rating does not address
                     dynamic glass and that there is no connected criteria for windows.
-                </p>
+                </p> -->
 
-                <h3>Objective of this Dashboard</h3>
-                <p>Simulations were done in EnergyPlus (v 9.2) using the National Renewable Energy Laboratory (NREL)
-                    prototype residential building that was modified by the AERC. The locations included a cold climate
-                    (Minneapolis, MN) and a hot climate (Houston, TX).
+                <h2>Methodology</h2>
+                <p>Simulations were done in EnergyPlus (v 9.5) using the
+                    <a href="https://www.energycodes.gov/prototype-building-models#Residential"
+                        target=_"blank">prototype residential buildings</a> provided by National Renewable Energy
+                    Laboratory (NREL). These prototypical files were modified by Lawrence Berkeley National Laboratory
+                    (LBNL) for the Attachments Energy Rating Council (AERC).
+                    The locations included a cold climate (Minneapolis, MN) and a hot climate (Houston, TX).
                 </p>
 
                 <div class="container text-center">
                     <img src="static/images/prototype.png" / width="600">
                 </div>
 
+                <p>&nbsp;</p>
+
                 <p>
-                    Simulations were done for unshaded windows, windows with BBGs and Venetian blinds with slat angles
-                    between -75 and 75 degrees at increments of 15 degrees, and windows with 3 types of cellular blinds.
-                    The insulating class units (IGUs) where specific for each climate, including window systems that
-                    meet
-                    the ENERGY STAR requirements for that location.
+                    The unshaded insulating glass units (IGUs) where specific for each climate, including window systems
+                    (scenarios) that
+                    meet the ENERGY STAR&reg; requirements for that location. The windows systems were modeled in LBNL's
+                    WINDOW and results exported as BSDF files. Each
+                    scenario was included in the EnergyPlus IDF file as a complex glazing system. Simulations were done
+                    for unshaded windows,
+                    windows with Venetian blinds-between-glass (BBGs) and 1-inch interior Venetian blinds with slat
+                    angles
+                    between -75 and 75 degrees at increments of 15 degrees, and windows with 3 types of interior
+                    cellular blinds (cell-in-cell simulated but not included in this dashboard). Blind slats in WINDOW
+                    have a positive
+                    angle when tipped up and a negative angle when tipped down roomside.
                 </p>
 
-                <p>The EnergyPlus simulation results were compiled in using Python/Pandas and then formatted for export.
+                <div class="container text-center">
+                    <img src="static/images/slat_angle_posneg.png" / width="250">
+                </div>
+
+                <p>&nbsp;</p>
+
+                <p>
+                    Illumination levels for all simulations were recorded in lux at reference points on the upper level
+                    of the south facade, 36 inches from the exterior wall and 30 inches from the floor. Hourly data
+                    records the lux level at that hour. Monthly data averages the lux level over the entire month.
+                </p>
+
+
+                <div class="container text-center">
+                    <img src="static/images/illuminance_model_description.png" / width="400">
+                </div>
+
+                <p>&nbsp;</p>
+
+                <p>
+                    Utility prices were from 2018 and taken from the <a
+                        href="http://seeatcalc.gastechnology.org/ResidentialBuildings.aspx" target="_blank">Source
+                        Energy Emissions Analysis Tool</a>.
+                </p>
+
+                <p>
+                    All costs are for heating, cooling, and fans only. The costs do not take into account lighting, DHW,
+                    plug loads, etc.
+                </p>
+
+                <p>&nbsp;</p>
+
+                <h2>Objective of this Dashboard</h2>
+                <p>The EnergyPlus simulation results were compiled using Python/Pandas and then formatted for export.
                     Exported data was used in Tableau to create visualizations specific for this project. The
-                    visualizations are intended to look at both the energy impacts of shading devices and the
-                    impacts of natural daylighting. Daylighting and illumnance data was recorded at a reference point
-                    on the south elevation, 36 inches from the exterior wall and 30 inches from the floor. The
-                    visualizations are intended to display the trade-offs on the insulating values of shading devices
+                    visualizations are intended to look at both the energy and the natural daylighting impacts and to
+                    demonstrate the trade-offs on the insulating values of shading devices
                     compared the availability of natural light.
                 </p>
 
