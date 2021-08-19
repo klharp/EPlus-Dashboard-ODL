@@ -73,273 +73,313 @@
     </header>
 
 
-    <!-- INTRO SECTION-->
-    <section id="intro">
-        <div class="container>
-            <div class=" row">
-            <div class="col-lg-8 mx-auto">
-                <!-- <h3>Background</h3>
-                <p>
-                    In 1997 ODL developed the first blinds between insulated glass panels (BBGs), which were
-                    installed primarily in residential entry doors. In 2016 ODL launched between glass blinds for
-                    windows, which are now sold to a range of large and small window OEMs. These blinds are manually
-                    controlled today. Historically energy performance has been characterized by U-factor and SHGC
-                    metrics. With the establishment of the Attachments Energy Rating Council (AERC) the DOE has
-                    supported studies assessing the whole
-                    building energy savings of attached window coverings, specifically cellular shades and
-                    horizontal blinds. These studies do not account for blind slat angle control which allow for
-                    direct or diffuse solar radiation while providing natural daylight. There are no comparable
-                    studies for BBGs and other forms of dynamic glazing. The DOE also sponsored studies of the
-                    effectiveness of different window covering control strategies, anticipating the use of automated
-                    window coverings in smart homes.
-                </p>
-                <p>
-                    In 2019 the Environmental Protection Agency (EPA) issued the first ENERGY STAR&reg; Smart Home
-                    Energy Management System (SHEMS)
-                    specification. AERC certified automated window coverings are listed as an “encouraged” optional
-                    device. There was pushback against including ENERGY STAR windows with dynamic glazing,
-                    specifically BBGs, based on the belief that the ENERGY STAR windows rating does not address
-                    dynamic glass and that there is no connected criteria for windows.
-                </p> -->
 
-                <h2>Methodology</h2>
-                <p>Simulations were done in EnergyPlus (v 9.5) using the
-                    <a href="https://www.energycodes.gov/prototype-building-models#Residential"
-                        target=_"blank">prototype residential buildings</a> provided by National Renewable Energy
-                    Laboratory (NREL). These prototypical files were modified by Lawrence Berkeley National Laboratory
-                    (LBNL) for the Attachments Energy Rating Council (AERC).
-                    The locations included a cold climate (Minneapolis, MN) and a hot climate (Houston, TX).
-                </p>
+    <!-- INTRO SECTION  -->
+    <section id="Intro">
+        <div class="container">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <!-- <h3>Background</h3>
+                                    <p>
+                                        In 1997 ODL developed the first blinds between insulated glass panels (BBGs), which were
+                                        installed primarily in residential entry doors. In 2016 ODL launched between glass blinds for
+                                        windows, which are now sold to a range of large and small window OEMs. These blinds are manually
+                                        controlled today. Historically energy performance has been characterized by U-factor and SHGC
+                                        metrics. With the establishment of the Attachments Energy Rating Council (AERC) the DOE has
+                                        supported studies assessing the whole
+                                        building energy savings of attached window coverings, specifically cellular shades and
+                                        horizontal blinds. These studies do not account for blind slat angle control which allow for
+                                        direct or diffuse solar radiation while providing natural daylight. There are no comparable
+                                        studies for BBGs and other forms of dynamic glazing. The DOE also sponsored studies of the
+                                        effectiveness of different window covering control strategies, anticipating the use of automated
+                                        window coverings in smart homes.
+                                    </p>
+                                    <p>
+                                        In 2019 the Environmental Protection Agency (EPA) issued the first ENERGY STAR&reg; Smart Home
+                                        Energy Management System (SHEMS)
+                                        specification. AERC certified automated window coverings are listed as an “encouraged” optional
+                                        device. There was pushback against including ENERGY STAR windows with dynamic glazing,
+                                        specifically BBGs, based on the belief that the ENERGY STAR windows rating does not address
+                                        dynamic glass and that there is no connected criteria for windows.
+                                    </p> -->
 
-                <div class="container text-center">
-                    <img src="static/images/prototype.png" / width="600">
+                    <h2>Methodology</h2>
+                    <p>Simulations were done in EnergyPlus (v 9.5) using the
+                        <a href="https://www.energycodes.gov/prototype-building-models#Residential"
+                            target=_"blank">prototype residential buildings</a> provided by National Renewable Energy
+                        Laboratory (NREL). These prototypical files were modified by Lawrence Berkeley National
+                        Laboratory
+                        (LBNL) for the Attachments Energy Rating Council (AERC).
+                        The locations included a cold climate (Minneapolis, MN) and a hot climate (Houston, TX).
+                    </p>
+
+                    <div class="container text-center">
+                        <img src="static/images/prototype.png" width="600">
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <p>&nbsp;</p>
 
-                <p>
-                    The unshaded insulating glass units (IGUs) where specific for each climate, including window systems
-                    (scenarios) that
-                    meet the ENERGY STAR&reg; requirements for that location. The windows systems were modeled in LBNL's
-                    WINDOW and results exported as BSDF files. Each
-                    scenario was included in the EnergyPlus IDF file as a complex glazing system. Simulations were done
-                    for unshaded windows,
-                    windows with Venetian blinds-between-glass (BBGs) and 1-inch interior Venetian blinds with slat
-                    angles
-                    between -75 and 75 degrees at increments of 15 degrees, and windows with 3 types of interior
-                    cellular blinds (cell-in-cell simulated but not included in this dashboard). Blind slats in WINDOW
-                    have a positive
-                    angle when tipped up and a negative angle when tipped down roomside.
-                </p>
 
-                <div class="container text-center">
-                    <img src="static/images/slat_angle_posneg.png" / width="250">
+    <!-- SCENARIO SECTION-->
+    <section id="scenario">
+        <div class="container">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <p><img src="static/images/slat_angle_posneg.png" width="200" width="400" style="float: right;">
+                        The unshaded insulating glass units (IGUs) where specific for each climate, including window
+                        systems (scenarios) that meet the ENERGY STAR&reg; requirements for that location.
+                    </p>
+                    <p>The windows systems were modeled in LBNL's WINDOW and results exported as BSDF files. Each
+                        scenario was included in the EnergyPlus IDF file as a complex glazing system.
+                    </p>
+                    <p>
+                        Simulations were done for unshaded windows, windows with Venetian blinds-between-glass (BBGs) and
+                        1-inch interior Venetian blinds with slat angles between -75 and 75 degrees at increments of 15
+                        degrees, and windows with 3 types of interior cellular blinds (cell-in-cell simulated but not
+                        included in this dashboard).
+                    </p>
+                    <p>
+                        Blind slats in WINDOW have a positive angle when tipped up and a negative angle when tipped down
+                        roomside.
+                    </p>
                 </div>
-
-                <p>&nbsp;</p>
-
-                <p>
-                    Illumination levels for all simulations were recorded in lux at reference points on the upper level
-                    of the south facade, 36 inches from the exterior wall and 30 inches from the floor. Hourly data
-                    records the lux level at that hour. Monthly data averages the lux level over the entire month.
-                </p>
+            </div>
+        </div>
+    </section>
 
 
-                <div class="container text-center">
-                    <img src="static/images/illuminance_model_description.png" / width="400">
+    <!-- ILLUMINATION SECTION-->
+    <section id="illumination">
+        <div class="container">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <p><img src="static/images/illuminance_model_description.png" width="400" style="float: right;">
+                        Illumination levels for all simulations were recorded in lux at reference points on the upper
+                        level of the south facade, 36 inches from the exterior wall and 30 inches from the floor.
+                    </p>
+                    <p> Hourly data records the lux level at that hour. Monthly data averages the lux level over the
+                        entire month.
+                    </p>
+
+                    <p>Minimum lighting levels for residential spaces (source: <a
+                            href="https://www.thoughtco.com/lighting-levels-by-room-1206643"
+                            target=_"blank">ThoughtCo):</a>
+                    </p>
+
+
+                    <center>
+                        <table class="table-bordered" width="50%">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Kitchen</b></td>
+                                    <td>General</td>
+                                    <td>300 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Countertop</td>
+                                    <td>750 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Bedroom (adult)</b></td>
+                                    <td>General</td>
+                                    <td>100–300 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Task</td>
+                                    <td>500 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Bedroom (child)</b></td>
+                                    <td>General</td>
+                                    <td>500 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Task</td>
+                                    <td>800 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Bathroom</b></td>
+                                    <td>General</td>
+                                    <td>
+                                        <p>300 lux</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <p>Shave/makeup</p>
+                                    </td>
+                                    <td>300–700 lux</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Living Room/Den</b></td>
+                                    <td>General</td>
+                                    <td>300 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Task</td>
+                                    <td>500 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Family Room/Home Theater</b></td>
+                                    <td>General</td>
+                                    <td>300 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Task</td>
+                                    <td>500 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>TV viewing</td>
+                                    <td>150 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Laundry/Utility</b></td>
+                                    <td>General</td>
+                                    <td>200 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Dining Room</b></td>
+                                    <td>General</td>
+                                    <td>200 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Hall, Landing/Stairway</b></td>
+                                    <td>General</td>
+                                    <td>100–500 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Home Office</b></td>
+                                    <td>General</td>
+                                    <td>500 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Task</td>
+                                    <td>800 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Workshop</b></td>
+                                    <td>General</td>
+                                    <td>800 lux</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Task</td>
+                                    <td>1,100 lux</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
                 </div>
-
-                <p>&nbsp;</p>
-
-                <p>Minimum lighting levels for residential spaces (source: <a
-                        href="https://www.thoughtco.com/lighting-levels-by-room-1206643" target=_"blank">ThoughtCo):</a>
-                </p>
+            </div>
+        </div>
+    </section>
 
 
-                <center>
-                    <table class="table-bordered" width="50%">
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>Kitchen</b></td>
-                                <td>General</td>
-                                <td>300 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Countertop</td>
-                                <td>750 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>Bedroom (adult)</b></td>
-                                <td>General</td>
-                                <td>100–300 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Task</td>
-                                <td>500 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>Bedroom (child)</b></td>
-                                <td>General</td>
-                                <td>500 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Task</td>
-                                <td>800 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>Bathroom</b></td>
-                                <td>General</td>
-                                <td>
-                                    <p>300 lux</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>
-                                    <p>Shave/makeup</p>
-                                </td>
-                                <td>300–700 lux</td>
-                            </tr>
-                            <tr>
-                                <td><b>Living Room/Den</b></td>
-                                <td>General</td>
-                                <td>300 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Task</td>
-                                <td>500 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>Family Room/Home Theater</b></td>
-                                <td>General</td>
-                                <td>300 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Task</td>
-                                <td>500 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>TV viewing</td>
-                                <td>150 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>Laundry/Utility</b></td>
-                                <td>General</td>
-                                <td>200 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>Dining Room</b></td>
-                                <td>General</td>
-                                <td>200 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>Hall, Landing/Stairway</b></td>
-                                <td>General</td>
-                                <td>100–500 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>Home Office</b></td>
-                                <td>General</td>
-                                <td>500 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Task</td>
-                                <td>800 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><b>Workshop</b></td>
-                                <td>General</td>
-                                <td>800 lux</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Task</td>
-                                <td>1,100 lux</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </center>
-                <p>
-                    Utility prices were from 2018 and taken from the <a
-                        href="http://seeatcalc.gastechnology.org/ResidentialBuildings.aspx" target="_blank">Source
-                        Energy Emissions Analysis Tool</a>.
-                </p>
+    <!-- OTHER SECTION-->
+    <section id="other">
+        <div class="container">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+                    <p>
+                        Utility prices were from 2018 and taken from the <a
+                            href="http://seeatcalc.gastechnology.org/ResidentialBuildings.aspx" target="_blank">Source
+                            Energy Emissions Analysis Tool</a>.
+                    </p>
 
-                <p>
-                    All costs are for heating, cooling, and fans only. The costs do not take into account lighting, DHW,
-                    plug loads, etc.
-                </p>
+                    <p>
+                        All costs are for heating, cooling, and fans only. The costs do not take into account
+                        lighting, DHW,
+                        plug loads, etc.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <p>&nbsp;</p>
 
-                <h2>Objective of this Dashboard</h2>
-                <p>The EnergyPlus simulation results were compiled using Python/Pandas and then formatted for export.
-                    Exported data was used in Tableau to create visualizations specific for this project. The
-                    visualizations are intended to look at both the energy and the natural daylighting impacts and to
-                    demonstrate the trade-offs on the insulating values of shading devices
-                    compared the availability of natural light.
-                </p>
+
+
+    <!-- OBJECTIVE SECTION-->
+    <section id="objective">
+        <div class="container">
+            <div class="row margin-top-50">
+                <div class="col-lg-10 mx-auto">
+
+                    <h2>Objective of this Dashboard</h2>
+                    <p>The EnergyPlus simulation results were compiled using Python/Pandas and then formatted for
+                        export.
+                        Exported data was used in Tableau to create visualizations specific for this project. The
+                        visualizations are intended to look at both the energy and the natural daylighting impacts
+                        and
+                        to
+                        demonstrate the trade-offs on the insulating values of shading devices
+                        compared the availability of natural light.
+                    </p>
+
+                </div>
 
             </div>
-
-        </div>
     </section>
 
 
