@@ -27,4 +27,3 @@ Data scrapers were created in a Jupyter Notebook. There is a notebook for each c
 
 * All CSVs brought into Tableau for graphing/charting.
 
-* Preview at: <a href="https://klharp.github.io/EPlus-Dashboard-ODL/">klharp.github.io/EPlus-Dashboard-ODL</a>
